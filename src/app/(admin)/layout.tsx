@@ -20,7 +20,7 @@ export default function AdminLayout({
     
     if (!LoginUseCase.isAuthenticated()) {
       console.log('❌ Not authenticated, redirecting to login');
-      router.push('/login');
+      router.push('/auth/login');
       return;
     }
     

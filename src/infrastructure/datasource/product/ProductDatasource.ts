@@ -124,7 +124,7 @@ export const ProductDatasource = {
       name: productData.name,
       description: productData.description,
       price: Number(productData.price),
-      stock: productData.stock ? Number(productData.stock) : null,
+      stock: productData.stock !== undefined ? Number(productData.stock) : null,
       image_url: productData.image_url || null
     };
 
